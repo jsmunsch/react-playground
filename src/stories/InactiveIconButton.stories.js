@@ -1,42 +1,42 @@
 import React from "react";
-import IconButton from "../components/IconButton";
+import InactiveIconButton from "../components/InactiveIconButton";
 import Walk from "../Icons/Walk";
 import Star from "../Icons/Star";
 import Euro from "../Icons/Euro";
 import Food from "../Icons/Food";
 
 export default {
-  title: "IconButton"
+  title: "InactiveIconButton"
 };
 
 export function WalkButton() {
   return (
-    <IconButton>
+    <InactiveIconButton>
       <Walk />
-    </IconButton>
+    </InactiveIconButton>
   );
 }
 
 export function StarButton() {
   return (
-    <IconButton>
+    <InactiveIconButton>
       <Star />
-    </IconButton>
+    </InactiveIconButton>
   );
 }
 
 export function EuroButton() {
   return (
-    <IconButton>
+    <InactiveIconButton>
       <Euro />
-    </IconButton>
+    </InactiveIconButton>
   );
 }
 
 export function FoodButton() {
   return (
-    <IconButton>
+    <InactiveIconButton>
       <Food />
-    </IconButton>
+    </InactiveIconButton>
   );
 }
