@@ -3,6 +3,7 @@ import ActionButton from "../components/ActionButton";
 import Done from "../Icons/Done";
 import Cancel from "../Icons/Cancel";
 import Add from "../Icons/Add";
+import ActionStar from "../Icons/ActionStar";
 
 export default {
   title: "ActionButton"
@@ -27,7 +28,15 @@ export function CancelButton() {
 export function AddButton() {
   return (
     <ActionButton>
-      <Add />
+      <Add value="1" />
+    </ActionButton>
+  );
+}
+
+export function StarButton() {
+  return (
+    <ActionButton>
+      <ActionStar />
     </ActionButton>
   );
 }
