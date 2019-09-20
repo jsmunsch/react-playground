@@ -6,9 +6,17 @@ export default {
   title: "RatingButton"
 };
 
-export function CostRating() {
+export function InactiveCostRating() {
   return (
     <RatingButton>
+      <EuroGrey />
+    </RatingButton>
+  );
+}
+
+export function ActiveCostRating() {
+  return (
+    <RatingButton active={true}>
       <EuroGrey />
     </RatingButton>
   );
