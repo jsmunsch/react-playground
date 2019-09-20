@@ -15,10 +15,10 @@ import React from "react";
 //     backgroundColor: `hsl(${hue > 120 ? 120 : hue}, 100%, 50%)`
 //   };
 // }
-function PasswordInput() {
-  const [password, setPassword] = React.useState("Hallo");
+function PasswordInput({ onChange, value }) {
+  const passwordLength = value.length;
   const inputStyle = {
-    background: `hsl(${Math.min(password.length * 10, 120)}, 100%, 50%)`
+    background: `hsl(${Math.min(passwordLength * 10, 120)}, 100%, 50%)`
   };
 
   return (
@@ -26,13 +26,13 @@ function PasswordInput() {
       <input
         className="password-input"
         type="password"
-        value={password}
+        value={value}
         style={inputStyle}
         onChange={event => {
-          setPassword(event.target.value);
+          onChange(event.target.value);
         }}
       />
-      {password.length}
+      {passwordLength}
     </div>
   );
 }
