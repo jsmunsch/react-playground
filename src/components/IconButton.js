@@ -8,7 +8,7 @@ const SingleButton = styled.button`
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
   fill: ${props => (props.active ? "white" : "#547fb3")};
-  padding: 14px;
+  padding-top: 2px;
   outline: none;
 `;
 

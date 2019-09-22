@@ -1,15 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  ActiveWalkButton,
-  InactiveStarButton,
-  InactiveFoodButton,
-  InactiveEuroButton,
-  InactiveWalkButton,
-  ActiveStarButton,
-  ActiveFoodButton,
-  ActiveEuroButton
-} from "../stories/IconButton.stories";
+import IconButton from "./IconButton";
+import Walk from "../Icons/Walk";
+import Star from "../Icons/Star";
+import Euro from "../Icons/Euro";
+import Food from "../Icons/Food";
 
 const FilterBarContainer = styled.nav`
   display: flex;
@@ -22,43 +17,21 @@ const FilterBarContainer = styled.nav`
   background-color: #fe6f61;
 `;
 
-export function FilterBarFirst() {
+export default function FilterBar({ selected }) {
   return (
     <FilterBarContainer>
-      <ActiveWalkButton />
-      <InactiveStarButton />
-      <InactiveFoodButton />
-      <InactiveEuroButton />
-    </FilterBarContainer>
-  );
-}
-export function FilterBarSecond() {
-  return (
-    <FilterBarContainer>
-      <InactiveWalkButton />
-      <ActiveStarButton />
-      <InactiveFoodButton />
-      <InactiveEuroButton />
-    </FilterBarContainer>
-  );
-}
-export function FilterBarThird() {
-  return (
-    <FilterBarContainer>
-      <InactiveWalkButton />
-      <InactiveStarButton />
-      <ActiveFoodButton />
-      <InactiveEuroButton />
-    </FilterBarContainer>
-  );
-}
-export function FilterBarFourth() {
-  return (
-    <FilterBarContainer>
-      <InactiveWalkButton />
-      <InactiveStarButton />
-      <InactiveFoodButton />
-      <ActiveEuroButton />
+      <IconButton active={"0" === selected}>
+        <Walk />
+      </IconButton>
+      <IconButton active={"1" === selected}>
+        <Star />
+      </IconButton>
+      <IconButton active={"2" === selected}>
+        <Euro />
+      </IconButton>
+      <IconButton active={"3" === selected}>
+        <Food />
+      </IconButton>
     </FilterBarContainer>
   );
 }
