@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const InactiveButton = styled.button`
+const SingleButton = styled.button`
   width: 60px;
   height: 60px;
   background-color: ${props => (props.active ? "#547fb3" : "white")};
@@ -12,6 +12,6 @@ const InactiveButton = styled.button`
   outline: none;
 `;
 
-export default function InactiveIconButton({ active, children }) {
-  return <InactiveButton active={active}>{children}</InactiveButton>;
+export default function IconButton({ active, children }) {
+  return <SingleButton active={active}>{children}</SingleButton>;
 }

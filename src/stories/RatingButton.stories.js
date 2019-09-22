@@ -21,3 +21,13 @@ export function ActiveCostRating() {
     </RatingButton>
   );
 }
+
+export function LowRating() {
+  return (
+    <>
+      <ActiveCostRating />
+      <InactiveCostRating />
+      <InactiveCostRating />
+    </>
+  );
+}
