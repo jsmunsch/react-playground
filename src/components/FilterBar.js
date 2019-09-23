@@ -13,6 +13,7 @@ const FilterBarContainer = styled.nav`
   width: 415px;
   height: 135px;
   position: sticky;
+  top: 0;
   align-items: center;
   justify-content: space-around;
   background-color: #fe6f61;
