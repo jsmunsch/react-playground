@@ -21,16 +21,16 @@ const FilterBarContainer = styled.nav`
 export default function FilterBar({ selected }) {
   return (
     <FilterBarContainer>
-      <IconButton active={"0" === selected}>
+      <IconButton active={selected === "0"}>
         <Walk />
       </IconButton>
-      <IconButton active={"1" === selected}>
+      <IconButton active={selected === "1"}>
         <Star />
       </IconButton>
-      <IconButton active={"2" === selected}>
+      <IconButton active={selected === "2"}>
         <Euro />
       </IconButton>
-      <IconButton active={"3" === selected}>
+      <IconButton active={selected === "3"}>
         <Food />
       </IconButton>
     </FilterBarContainer>
