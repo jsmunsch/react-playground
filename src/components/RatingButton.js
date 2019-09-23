@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const RatingIcon = styled.button`
   height: 55px;
@@ -13,3 +14,7 @@ const RatingIcon = styled.button`
 export default function RatingButton({ active, children }) {
   return <RatingIcon active={active}>{children}</RatingIcon>;
 }
+
+RatingButton.propTypes = {
+  children: PropTypes.object
+};
