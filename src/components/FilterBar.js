@@ -40,3 +40,7 @@ export default function FilterBar({ selected }) {
 FilterBar.propTypes = {
   selected: PropTypes.string
 };
+
+FilterBar.propTypes = {
+  active: PropTypes.bool
+};
