@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const SingleButton = styled.button`
+const FilterBarButton = styled.button`
   width: 60px;
   height: 60px;
   background-color: ${props => (props.active ? "#547fb3" : "white")};
@@ -14,7 +14,7 @@ const SingleButton = styled.button`
 `;
 
 export default function IconButton({ active, children }) {
-  return <SingleButton active={active}>{children}</SingleButton>;
+  return <FilterBarButton active={active}>{children}</FilterBarButton>;
 }
 
 IconButton.propTypes = {
