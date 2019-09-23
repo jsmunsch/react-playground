@@ -9,7 +9,6 @@ import PropTypes from "prop-types";
 
 const FilterBarContainer = styled.nav`
   display: flex;
-  flex-direction: row;
   width: 415px;
   height: 135px;
   position: sticky;
